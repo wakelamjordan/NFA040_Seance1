@@ -6,6 +6,7 @@ const items = [
   { tag: "a", href: "./formulaire.html", text: "formulaire" },
   { tag: "a", href: "./Jeu_Des_Base.html", text: "jeu de base" },
   { tag: "a", href: "./maison_svg.html", text: "Maison svg" },
+  { tag: "a", href: "./Exemple_Base_SVG.html", text: "exemple" },
 ];
 
 const ul = document.createElement("ul");
