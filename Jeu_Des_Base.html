@@ -1,0 +1,87 @@
+<html>
+
+<head>
+  <script src="./component/script/script.js" defer></script>
+
+  <script>
+    function lancer() {
+      // il faudrai que je comprenne ceci
+      var Val = Math.floor((Math.random() * 6) + 1);
+
+      console.log(Val);
+
+      document.getElementById('C1').style.display = 'none';
+      document.getElementById('C2').style.display = 'none';
+      document.getElementById('C3').style.display = 'none';
+      document.getElementById('C4').style.display = 'none';
+      document.getElementById('C5').style.display = 'none';
+      document.getElementById('C6').style.display = 'none';
+      document.getElementById('C7').style.display = 'none';
+
+      switch (Val) {
+        case 1:
+          document.getElementById('C3').style.display = 'block';
+          break;
+
+        case 2:
+          document.getElementById('C1').style.display = 'block';
+          document.getElementById('C6').style.display = 'block';
+          break;
+        case 3:
+          document.getElementById('C1').style.display = 'block';
+          document.getElementById('C3').style.display = 'block';
+          document.getElementById('C6').style.display = 'block';
+          break;
+        case 4:
+          document.getElementById('C1').style.display = 'block';
+          document.getElementById('C2').style.display = 'block';
+          document.getElementById('C6').style.display = 'block';
+          document.getElementById('C7').style.display = 'block';
+          break;
+        case 5:
+          document.getElementById('C1').style.display = 'block';
+          document.getElementById('C2').style.display = 'block';
+          document.getElementById('C3').style.display = 'block';
+          document.getElementById('C6').style.display = 'block';
+          document.getElementById('C7').style.display = 'block';
+          break;
+        case 6:
+          document.getElementById('C1').style.display = 'block';
+          document.getElementById('C2').style.display = 'block';
+          document.getElementById('C4').style.display = 'block';
+          document.getElementById('C5').style.display = 'block';
+          // document.getElementById('C3').style.display = 'block';
+          document.getElementById('C6').style.display = 'block';
+          document.getElementById('C7').style.display = 'block';
+          break;
+      }
+
+    }
+  </script>
+</head>
+
+<body>
+  <nav id="navbar">
+  </nav>
+  <button onclick="lancer()">Lancer</button>
+  <svg width="300px" height="300px" style="background-color:lightgray">
+
+    <!-- haut tout à gauche -->
+    <circle id="C1" cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" style="display:none" />
+    <!-- haut tout à droite -->
+    <circle id="C2" cx="250" cy="50" r="40" stroke="black" stroke-width="3" fill="red" style="display:none" />
+    <!-- centre -->
+    <circle id="C3" cx="150" cy="150" r="40" stroke="black" stroke-width="3" fill="red" style="display:none" />
+    <!-- centre droite -->
+    <circle id="C4" cx="250" cy="150" r="40" stroke="black" stroke-width="3" fill="red" style="display:none" />
+    <!-- centre gauche -->
+    <circle id="C5" cx="50" cy="150" r="40" stroke="black" stroke-width="3" fill="red" style="display:none" />
+    <!-- en bas à droite -->
+    <circle id="C6" cx="250" cy="250" r="40" stroke="black" stroke-width="3" fill="red" style="display:none" />
+    <!-- en bas à gauche -->
+    <circle id="C7" cx="50" cy="250" r="40" stroke="black" stroke-width="3" fill="red" style="display:none" />
+
+  </svg>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+﻿<html>
+
+<head>
+		<script src="./component/script/script.js" defer></script>
+
+	<style>
+		fieldset>div {
+			max-width: 500px;
+		}
+
+		input {
+			width: 50%;
+		}
+
+		div>label {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.inputLabel {
+			display: flex;
+		}
+
+		input[type='radio'] {
+			width: 15px;
+		}
+
+		.section {
+			margin: 20px 0;
+		}
+	</style>
+
+</head>
+
+<body>
+<nav id="navbar">
+</nav>
+	<h1>Dresseur de pokémon</h1>
+
+	<p>Les champs marqués d'une * sont obligatoires.</p>
+
+	<form action="#">
+		<fieldset>
+			<legend>Nouveau dresseur</legend>
+			<div>
+				<div class="section">
+					<label for="name">Nom *</label>
+					<input type="text" name="name" id="name" required>
+				</div>
+				<div class="section">
+					<label for="description">Description</label>
+					<textarea name="description" id="description"></textarea>
+				</div>
+				<div class="section">
+					<span>Équipe</span>
+					<div class="inputLabel" style="">
+						<input type="radio" name="equipe" id="rouge" value="rouge">
+						<label for="rouge">Rouge</label>
+					</div>
+					<div class="inputLabel">
+						<input type="radio" name="equipe" id="jaune" value="jaune">
+						<label for="jaune">Jaune</label>
+					</div>
+					<div class="inputLabel">
+						<input type="radio" name="equipe" id="bleu" value="bleu">
+						<label for="bleu">Bleu</label>
+					</div>
+				</div>
+				<div class="section">
+					<label for="anniversaire">Anniversaire *</label>
+					<input type="date" name="anniversaire" id="anniversaire" required>
+				</div>
+				<div>
+					<input type="submit" value="Envoyer"  style="width: auto;"/>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+
+</body>
+
+</html>
