@@ -7,14 +7,64 @@
             background-color: black
         }
 
-        #Madiv1 {
+        div {
+            width: 150px;
+            height: 150px;
             color: white;
-            background-color: green;
-            position: absolute;
+            padding: 10px;
+            /* position: absolute;
             left: 25px;
-            top: 25px;
-            widht: 100px;
-            height: 100px;
+            top: 25px; */
+        }
+
+        #border {
+            border-top: 1px solid white;
+            /* background-color: #fff; */
+            width: 450px;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container {
+            width: 400px;
+            height: 400px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 2px solid white;
+            /* justify-content: center; */
+            justify-items: center;
+            align-content: space-evenly;
+        }
+
+        #uLeft {
+            background-color: green;
+        }
+
+        #uRight {
+            background-color: rgb(255, 174, 0);
+        }
+
+        #dLeft {
+            background-color: red;
+        }
+
+        #dRight {
+            background-color: blue;
+
         }
     </style>
     <script src="./component/script/script.js" defer></script>
@@ -22,13 +72,17 @@
 </head>
 
 <body>
-    <nav id="navbar">
-        <header>
-            <div id="Madiv1">En haut à gauche</div>
-            <div>En haut à droite</div>
-            <div>En bas à droite</div>
-            <div>En bas à gauche</div>
-        </header>
+    <!-- <nav id="navbar"> -->
+    <header>
+        <div id="border">
+            <div id="container">
+                <div id="uLeft">En haut à gauche</div>
+                <div id="uRight">En haut à droite</div>
+                <div id="dLeft">En bas à gauche</div>
+                <div id="dRight">En bas à droite</div>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>
