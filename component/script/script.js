@@ -7,6 +7,7 @@ const items = [
   { tag: "a", href: "./Jeu_Des_Base.html", text: "jeu de base" },
   { tag: "a", href: "./maison_svg.html", text: "Maison svg" },
   { tag: "a", href: "./Exemple_Base_SVG.html", text: "exemple" },
+  { tag: "a", href: "./CSS_Carre", text: "css carre" },
 ];
 
 const ul = document.createElement("ul");

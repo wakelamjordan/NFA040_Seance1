@@ -6,9 +6,20 @@
   <script>
     function lancer() {
       // il faudrai que je comprenne ceci
-      var Val = Math.floor((Math.random() * 6) + 1);
+      // var Val = Math.floor((Math.random() * 6) + 1);
+      
 
-      console.log(Val);
+      var mathRandom = Math.random();
+
+      var mathFloor = Math.floor((mathRandom *6)+1);
+
+      var Val = mathFloor;
+
+
+      console.log(`${mathRandom} \\\\\ ${mathRandom * 6} \\\\ ${mathFloor} \\\\ ${Val}` );
+      // console.log(Math.floor());
+
+      // console.log(Val);
 
       document.getElementById('C1').style.display = 'none';
       document.getElementById('C2').style.display = 'none';
