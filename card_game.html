@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeu de carte</title>
     <style>
-        g{
+        g[id]{
             display: none;
         }
-        #jack_club{
-            display: block;
+        #jack_club,#jack,g[id^="jack"],g[transform]{
+            display:block;
+        }
+        #jack_heart,#jack_spade,#jack_diamond{
+            display: none;
         }
     </style>
 </head>
